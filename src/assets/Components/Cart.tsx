@@ -11,7 +11,7 @@ const Cart: React.FC<CartProps> = ({ isOpen, onClose }) => {
       <div className={`cart ${isOpen ? 'open' : ''}`}>
         <div className="cart-content">
           {<h2>Carrinho de <br /> compras</h2>}
-          <button onClick={onClose}>Fechar</button>
+          <button onClick={onClose}>X</button>
         </div>
       </div>
     );

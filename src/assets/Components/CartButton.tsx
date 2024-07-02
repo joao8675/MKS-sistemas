@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Cart from './Cart';
-import './CartButton.css';
 
 const CartButton: React.FC = () => {
   const [cartOpen, setCartOpen] = useState(false);
@@ -12,7 +11,8 @@ const CartButton: React.FC = () => {
   return (
     <>
       <button className={`cart-button ${cartOpen ? 'open' : 'closed'}`} onClick={toggleCart}>
-        Carrinho
+        <img src="../src/assets/Cart.svg" />
+        <span className="item-count">{}</span>
       </button>
       <Cart isOpen={cartOpen} onClose={toggleCart} />
     </>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import CartButton from './assets/Components/CartButton';
+import ProductsList from './assets/Components/ProductGrid';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,9 @@ function App() {
         </div>
         <CartButton />
       </nav>
+      <main>
+      <ProductsList />
+      </main>
     </>
   )
 }
