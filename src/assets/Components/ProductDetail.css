@@ -3,13 +3,13 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh; /* Altura da viewport para centralização vertical */
-    padding: 0; /* Remover padding para centralização correta */
+    height: 100vh;
+    padding: 0;
   }
   
   .product-container {
     display: grid;
-    gap: 20px; /* Espaçamento entre as colunas da grid */
+    gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
     width: 918px;
@@ -24,7 +24,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Garante que o botão fique no final da div */
+    justify-content: space-between;
   }
   
   .productImg img {
@@ -66,12 +66,12 @@
     font-weight: 300;
     text-align: left;
     padding: 0 20px 20px;
-    margin-bottom: auto; /* Empurra o botão para o final da div */
+    margin-bottom: auto;
   }
   
   .buy {
     width: 100%;
-    margin-top: auto; /* Garante que a div .buy fique no final da div .product-detail */
+    margin-top: auto;
   }
   
   .buy button {
@@ -80,7 +80,7 @@
     justify-content: center;
     gap: 10px;
     width: 100%;
-    height: 50px; /* Altura fixa do botão */
+    height: 50px;
     background-color: #0F52BA;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -92,7 +92,7 @@
     letter-spacing: 1px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border: none; /* Remover bordas adicionais */
+    border: none;
   }
   
   .buy button:disabled {

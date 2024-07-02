@@ -1,21 +1,18 @@
-import React, { useState } from 'react';
-import Cart from './Cart';
+import React from 'react';
+import './Cart.css';
 
-const CartButton: React.FC = () => {
-  const [cartOpen, setCartOpen] = useState(false);
+interface CartButtonProps {
+  isCartOpen: boolean;
+  toggleCart: () => void;
+  itemCount: number;
+}
 
-  const toggleCart = () => {
-    setCartOpen(!cartOpen);
-  };
-
+const CartButton: React.FC<CartButtonProps> = ({ isCartOpen, toggleCart, itemCount }) => {
   return (
-    <>
-      <button className={`cart-button ${cartOpen ? 'open' : 'closed'}`} onClick={toggleCart}>
-        <img src="../src/assets/Cart.svg" />
-        <span className="item-count">{}</span>
-      </button>
-      <Cart isOpen={cartOpen} onClose={toggleCart} />
-    </>
+    <button className={`cart-button ${isCartOpen ? 'open' : 'closed'}`} onClick={toggleCart}>
+      <img src="../src/assets/Cart.svg" alt="Cart" />
+      <span className="item-count">{itemCount}</span>
+    </button>
   );
 };
 
